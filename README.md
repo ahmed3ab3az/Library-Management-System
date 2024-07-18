@@ -1,6 +1,3 @@
-
----
-
 # Library Management System
 
 ## Overview
@@ -20,38 +17,43 @@ The Library Management System is designed to streamline and manage the various o
 ### Prerequisites
 
 - Python 3.x
-- pyodbc library
-- customtkinter , tkinter for GUI libraries
+- `pyodbc` library
+- `customtkinter` and `tkinter` for GUI libraries
 - SQL Server with the `UniversityLibrary` database
 
 ### Installation
 
 1. Clone the repository:
+
     ```sh
     git clone https://github.com/ahmed3ab3az/Library-Management-System.git
     cd Library-Management-System
     ```
 
 2. Install the required Python packages:
+
     ```sh
-    pip install pyodbc
+    pip install pyodbc customtkinter
     ```
 
 3. Configure the SQL Server connection in `Queries.py`:
+
     ```python
     server = 'YOUR_SERVER_NAME'  # Replace with your server name
     database = 'UniversityLibrary'  # Database name
     driver = 'ODBC Driver 17 for SQL Server'  # ODBC driver
     ```
 
-### Usage
+## Usage
 
-1. **Running the GUI**:
+1. Running the GUI:
+
     ```sh
     python main.py
     ```
 
-2. **Interacting with the Library System**:
+2. Interacting with the Library System:
+
     - **Sign Up**: Create a new user account (admin or student).
     - **Sign In**: Log in with your credentials.
     - **Add/Edit/Delete Books**: Manage the book inventory.
@@ -60,21 +62,42 @@ The Library Management System is designed to streamline and manage the various o
     - **Delete User**: Remove a user account from the system.
     - **Display Books**: View all available books in the library.
 
+## Database Schema
+
+The database schema consists of the following tables:
+
+- **Users**: Stores user information (ID, name, email, role, etc.)
+- **Books**: Stores book details (ID, title, author, ISBN, availability, etc.)
+- **Transactions**: Stores borrowing and returning transactions (transaction ID, book ID, user ID, borrow date, return date, etc.)
+
+## Diagrams
+
+### Entity-Relationship Diagram (ERD)
+
+![ERD](Daigrams/Conceptual%20ERD.pdf)
+
+### Schema Diagram
+
+![Schema](Daigrams/Physical%20Diagram.pdf)
+
+## Database Schema 
+for Create the DB and Put some random records and make some queries for this
+
 ## File Descriptions
 
 - `Queries.py`: Contains all the functions to interact with the SQL Server database, such as adding, editing, deleting books, and managing users and transactions.
 - `GUI.py`: Implements the graphical user interface for the library management system, allowing users to interact with the system through a user-friendly interface.
-- `main.py`: Running the GUI
-  
+- `main.py`: Running the GUI.
+
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please follow these steps:
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the project.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
 
 ## License
 
@@ -84,6 +107,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any questions or suggestions, feel free to contact:
 
-- Ahmed Abaza: [ahmed3ab3az@gmail.com](mailto:ahmed3ab3az@gmail.com)
-
----
+- **Ahmed Abaza**: ahmed3ab3az@gmail.com
