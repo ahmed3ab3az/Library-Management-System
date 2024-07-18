@@ -23,6 +23,7 @@ The Library Management System is designed to streamline and manage the various o
 
 - Python 3.x
 - pyodbc library
+- customtkinter , tkinter for GUI libraries
 - SQL Server with the `UniversityLibrary` database
 
 ### Installation
