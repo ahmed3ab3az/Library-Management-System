@@ -48,7 +48,7 @@ The Library Management System is designed to streamline and manage the various o
 
 1. **Running the GUI**:
     ```sh
-    python GUI.py
+    python main.py
     ```
 
 2. **Interacting with the Library System**:
@@ -64,7 +64,8 @@ The Library Management System is designed to streamline and manage the various o
 
 - `Queries.py`: Contains all the functions to interact with the SQL Server database, such as adding, editing, deleting books, and managing users and transactions.
 - `GUI.py`: Implements the graphical user interface for the library management system, allowing users to interact with the system through a user-friendly interface.
-
+- `main.py`: Running the GUI
+  
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
