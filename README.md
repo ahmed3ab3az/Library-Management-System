@@ -1,5 +1,3 @@
-# Library-Management-System
-Certainly! Here's a detailed README for the Library Management System project on GitHub:
 
 ---
 
