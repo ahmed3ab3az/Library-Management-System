@@ -74,11 +74,11 @@ The database schema consists of the following tables:
 
 ### Entity-Relationship Diagram (ERD)
 
-![ERD](Daigrams/Conceptual ERD.pdf)
+![ERD](Diagrams/Conceptual%20ERD.pdf)
 
 ### Schema Diagram
 
-![Schema](Daigrams/Physical Diagram.pdf)
+![Schema](Daigrams/Physical%20Diagram.pdf)
 
 ## Database Schema 
 for Create the DB and Put some random records and make some queries for this
